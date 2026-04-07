@@ -1,7 +1,12 @@
 aid: abbvie
-url: https://raw.githubusercontent.com/api-evangelist/abbvie/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/abbvie/refs/heads/main/apis.yml
 modified: '2026-03-21'
 apis: []
 common:
   - type: Website
     url: https://www.abbvie.com
+description: >-
+  AbbVie is a research-based biopharmaceutical company that discovers, develops, manufactures,
+  and markets advanced therapies in immunology, oncology, neuroscience, and other
+  specialty areas.
