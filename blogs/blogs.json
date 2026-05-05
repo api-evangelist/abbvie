@@ -1,0 +1,13 @@
+{
+  "repo": "abbvie",
+  "feeds": [
+    {
+      "source": "https://news.abbvie.com/",
+      "feed_url": "https://news.abbvie.com/index.php?s=2429&pagetemplate=rss",
+      "saved": 10,
+      "title": "AbbVie News Center"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:20:26Z"
+}
