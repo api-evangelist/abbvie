@@ -3,12 +3,11 @@
   "feeds": [
     {
       "source": "https://news.abbvie.com/",
-      "feed_url": "",
-      "title": "",
-      "saved": 0,
-      "error": "no_feed"
+      "feed_url": "https://news.abbvie.com/index.php?s=2429&pagetemplate=rss",
+      "title": "AbbVie News Center",
+      "saved": 8
     }
   ],
-  "post_count": 10,
-  "fetched": "2026-05-09T20:17:51Z"
+  "post_count": 18,
+  "fetched": "2026-05-17T20:48:52Z"
 }
