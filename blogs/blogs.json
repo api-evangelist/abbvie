@@ -2,17 +2,13 @@
   "repo": "abbvie",
   "feeds": [
     {
-      "source": "https://news.abbvie.com/index.php?s=2429&pagetemplate=rss",
+      "source": "https://news.abbvie.com/",
       "feed_url": "https://news.abbvie.com/index.php?s=2429&pagetemplate=rss",
-      "title": "",
-      "saved": 3,
+      "title": "AbbVie News Center",
+      "saved": 2,
       "method": "feed"
-    },
-    {
-      "source": "https://www.abbvie.com/terms-of-use.html",
-      "error": "HTTPError"
     }
   ],
-  "post_count": 28,
-  "fetched": "2026-06-14T20:42:17Z"
+  "post_count": 30,
+  "fetched": "2026-06-21T17:00:00Z"
 }
