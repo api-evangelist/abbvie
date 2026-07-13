@@ -5,7 +5,7 @@
       "source": "https://news.abbvie.com/index.php?s=2429&pagetemplate=rss",
       "feed_url": "https://news.abbvie.com/index.php?s=2429&pagetemplate=rss",
       "title": "",
-      "saved": 7,
+      "saved": 0,
       "method": "feed"
     },
     {
@@ -16,6 +16,6 @@
       "method": "none"
     }
   ],
-  "post_count": 37,
-  "fetched": "2026-06-27T12:03:07Z"
+  "post_count": 43,
+  "fetched": "2026-07-11T11:50:51Z"
 }
