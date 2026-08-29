@@ -1,0 +1,98 @@
+generated: '2026-08-29'
+method: probed
+source: live GET probes of /.well-known/* on every AbbVie host reachable from apis.yml
+note: >-
+  No AbbVie host serves any /.well-known/ document. www.abbvie.com and www.allergan.com sit
+  behind a Cloudflare bot challenge that answers 403 with a 4.5KB interstitial for every path
+  (robots.txt is the only path served to a non-browser client). api.abbvie.com is a live Apigee
+  Edge gateway that answers every path with a JSON fault
+  ("Unable to identify proxy for host: secure") — real API infrastructure, no public proxy.
+  www.abbvieclinicaltrials.com is an SPA catch-all: every /.well-known/* path and /llms.txt
+  return HTTP 200 with the same ~303KB HTML application shell, so those 200s are NOT documents.
+  No WellKnown or SecurityTxt pointer is emitted — nothing was fetched and saved.
+hit_count: 0
+hosts:
+  - host: https://api.abbvie.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+  - host: https://www.abbvie.com
+    note: Cloudflare bot challenge — 403 interstitial on every path except /robots.txt
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+      - path: /.well-known/agent-card.json
+        status: 403
+      - path: /.well-known/agent.json
+        status: 403
+  - host: https://www.abbviescience.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://www.abbviepro.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://www.abbviecontractmfg.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+  - host: https://www.abbvieclinicaltrials.com
+    note: SPA catch-all — 200 with a 303KB HTML shell on every path; treated as a miss
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        soft_404: true
+        bytes: 303335
+      - path: /.well-known/agent-card.json
+        status: 200
+        soft_404: true
+        bytes: 303353
+      - path: /.well-known/api-catalog
+        status: 200
+        soft_404: true
+        bytes: 303329
+  - host: https://cvd.abbvie.com
+    note: SPA catch-all — /.well-known/security.txt returns the same 55,923-byte page as /
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        soft_404: true
+        bytes: 55923
+soft_404_control:
+  - host: https://www.abbvieclinicaltrials.com
+    path: /llms.txt
+    status: 200
+    bytes: 303282

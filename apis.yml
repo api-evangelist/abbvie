@@ -42,6 +42,16 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/abbvie.png
 access: 3rd-Party
 common:
+  - type: VulnerabilityDisclosure
+    url: security/abbvie-vulnerability-disclosure.yml
+  - type: Security
+    url: https://cvd.abbvie.com/
+  - type: LLMsTxt
+    url: llms/abbvie-llms.txt
+  - type: Plans
+    url: plans/abbvie-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/abbvie-rate-limits.yml
   - type: DomainSecurity
     url: security/abbvie-domain-security.yml
   - type: GitHubOrganization
@@ -94,10 +104,33 @@ description: >-
   specialty areas. AbbVie's portfolio includes treatments for autoimmune diseases,
   various cancers, neurological disorders, and aesthetics through the Allergan Aesthetics portfolio.
 created: '2024-01-15'
-modified: '2026-04-19'
+modified: '2026-08-29'
 position: Consuming
 specificationVersion: '0.23'
 apis: []
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-08-29'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    AbbVie runs a live Apigee Edge gateway at api.abbvie.com that answers every path with
+    "Unable to identify proxy for host: secure" — real API infrastructure with no public proxy,
+    no developer portal, no reference, and a verified GitHub organization carrying zero public
+    repositories.
+  evidence:
+    - url: https://api.abbvie.com/openapi.json
+      status: 404
+    - url: https://api.github.com/orgs/AbbVie
+      status: 200
+    - url: https://www.abbvieclinicaltrials.com/.well-known/api-catalog
+      status: 200
+    - url: https://www.abbvie.com/
+      status: 403
+  checked: '2026-08-29'

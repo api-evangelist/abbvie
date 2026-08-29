@@ -1,0 +1,27 @@
+generated: '2026-08-29'
+method: searched
+source: >-
+  npm registry search (registry.npmjs.org/-/v1/search?text=abbvie), PyPI (pypi.org/pypi/abbvie/json
+  -> 404), and the AbbVie GitHub organization (api.github.com/orgs/AbbVie -> 200, public_repos: 0)
+note: >-
+  No first-party AbbVie client library exists on any public registry. The npm search returns only
+  unrelated third-party packages (tlds, tlds2, yf-web-scraper); PyPI has no `abbvie` project; the
+  github.com/AbbVie organization is real and verified-owned but publishes zero public repositories,
+  so there is no source-distributed SDK either. No Packages or SDKs pointer is emitted — there is
+  nothing to point at.
+package_count: 0
+packages: []
+registries_probed:
+  - registry: npm
+    query: abbvie
+    status: 200
+    first_party_hits: 0
+  - registry: pypi
+    query: abbvie
+    status: 404
+    first_party_hits: 0
+  - registry: github
+    query: orgs/AbbVie
+    status: 200
+    first_party_hits: 0
+    note: public_repos = 0

@@ -1,0 +1,14 @@
+generated: '2026-08-29'
+method: searched
+source: https://api.abbvie.com/
+note: >-
+  No AbbVie API rate limits are documented anywhere public. There is no developer portal, no API
+  reference, and no machine-readable contract; api.abbvie.com is a live Apigee Edge gateway whose
+  every path returns a JSON fault with no rate-limit headers on the response. An honest zero.
+limit_count: 0
+rate_limits: []
+response_headers: []
+evidence:
+  - url: https://api.abbvie.com/openapi.json
+    status: 404
+    note: Apigee ApplicationNotFound fault; no RateLimit-* or X-RateLimit-* headers returned
