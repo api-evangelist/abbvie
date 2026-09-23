@@ -1,7 +1,9 @@
 ---
 title: Three ways AI is changing drug discovery at AbbVie
 url: https://www.abbvie.com/who-we-are/our-stories/three-ways-ai-is-changing-drug-discovery-at-abbvie.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AbbVie" press release artificial intelligence'
 position: 2
 source: serpapi-google

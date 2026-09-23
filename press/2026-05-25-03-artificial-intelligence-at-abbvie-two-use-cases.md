@@ -1,7 +1,9 @@
 ---
 title: Artificial Intelligence at AbbVie - Two Use Cases
 url: https://emerj.com/artificial-intelligence-at-abbvie-two-use-cases/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AbbVie" press release artificial intelligence'
 position: 3
 source: serpapi-google

@@ -1,7 +1,9 @@
 ---
 title: Areas of Innovation
 url: https://www.abbvie.com/science/areas-of-innovation.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AbbVie" press release artificial intelligence'
 position: 4
 source: serpapi-google

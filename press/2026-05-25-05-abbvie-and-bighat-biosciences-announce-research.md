@@ -1,7 +1,9 @@
 ---
 title: AbbVie and BigHat Biosciences Announce Research ...
 url: https://www.prnewswire.com/news-releases/abbvie-and-bighat-biosciences-announce-research-collaboration-to-leverage-artificial-intelligence-and-machine-learning-to-discover-next-generation-therapeutic-antibodies-302006127.html
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"AbbVie" press release artificial intelligence'
 position: 5
 source: serpapi-google
