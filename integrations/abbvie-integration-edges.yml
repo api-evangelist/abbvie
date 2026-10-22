@@ -184,6 +184,97 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-clinical-trial-sponsors.py
   first_seen: '2026-10-21'
+- partner_name: EMA (EU centrally authorised medicines)
+  partner: null
+  partner_match: register-name
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.ema.europa.eu/en/medicines/human/EPAR/boey
+  category: EU centrally authorised medicine
+  contract_reference:
+    register: EMA medicines report (centrally authorised medicines; CHMP / CVMP opinion, EC decision)
+    standard: EU centralised marketing authorisation (Regulation (EC) 726/2004)
+    role: eu-marketing-authorisation-holder
+    categories:
+    - Human
+    statuses:
+    - Application withdrawn
+    - Authorised
+    - Withdrawn
+    spec_file: null
+    registered_name: AbbVie Limited
+    matched_domain: null
+    matched_by: register-name
+    current_authorisation: true
+    signal_note: certified_products = one entry per product TYPE, never per product, only from products granted
+      an MA; lapsed when every granted product of the type is withdrawn / expired / revoked / lapsed. Advanced-therapy
+      rows are read by cell-gene-therapy and not repeated here. Products are context, never counted
+    detected_by: sweep-eu-ema-medicines.py
+    detected: '2026-10-22'
+    certified_products:
+    - product: human medicine (other) (EU centralised marketing authorisation)
+      product_type: human medicine (other)
+      standard: EU centralised marketing authorisation (Regulation (EC) 726/2004)
+      lapsed: false
+      products_sample:
+      - Boey (trenibotulinumtoxinE)
+      - Exviera (dasabuvir)
+    register_name_note: register-name 'abbvie' = abbvie; no wikidata P856
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  detected_by: sweep-eu-ema-medicines.py
+  first_seen: '2026-10-22'
+- partner_name: Health Canada (Medical Device Licence)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://health-products.canada.ca/api/medical-devices/company/?id=137971&lang=en&type=json
+  category: Canadian medical device licence
+  contract_reference:
+    register: Health Canada Medical Devices Active Licence Listing (MDALL) public API (health-products.canada.ca/api/medical-devices)
+    standard: Canada Medical Devices Regulations (SOR/98-282), Medical Device Licence
+    spec_file: null
+    role: licence-holder
+    registered_name: ABBVIE INC.
+    register_country: US
+    register_id: https://health-products.canada.ca/api/medical-devices/company/?id=137971&lang=en&type=json
+    company_status: A
+    matched_domain: abbvie.com
+    matched_by: domain
+    certified_products:
+    - product: Health Canada Medical Device Licence, Class II
+      product_type: Class II
+      risk_class: 2
+      lapsed: false
+      first_issued: '2014-02-05'
+      conditional: false
+      licences_sample:
+      - ABBVIE ENFIT NJ
+      - ABBVIE NJ
+    - product: Health Canada Medical Device Licence, Class III
+      product_type: Class III
+      risk_class: 3
+      lapsed: false
+      first_issued: '2014-07-16'
+      conditional: false
+      licences_sample:
+      - ABBVIE J
+      - ABBVIE PEG
+    signal_note: certified_products = one entry per device RISK CLASS licensed by Health Canada, lapsed when no
+      licence of that class is still issued (status I / D, no end date); licence names are a sample, licence and
+      device counts are context, never counted
+    detected_by: sweep-canada-medical-device-licensing.py
+    detected: '2026-10-22'
+    identity: wikidata Q14662364 'AbbVie' P856 http://www.abbvie.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-canada-medical-device-licensing.py
+  first_seen: '2026-10-22'
 generated: '2026-10-20'
 method: searched
 source:
@@ -205,3 +296,8 @@ checked:
 - https://api.fda.gov/drug/drugsfda.json
 - https://euclinicaltrials.eu/ctis-public/search
 - https://www.cdisc.org/members/search
+- https://spor.ema.europa.eu/omswi/
+- https://www.ema.europa.eu/en/human-regulatory-overview/research-development/data-medicines-iso-idmp-standards-overview
+- https://www.ema.europa.eu/en/medicines/download-medicine-data
+- https://health-products.canada.ca/api/medical-devices/company/?lang=en&type=json
+- https://health-products.canada.ca/api/medical-devices/licence/?lang=en&type=json
