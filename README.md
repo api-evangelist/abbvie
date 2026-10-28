@@ -1,4 +1,4 @@
-# AbbVie (abbvie)
+# AbbVie
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,60 +66,95 @@
 
 AbbVie is a research-based biopharmaceutical company that discovers, develops, manufactures, and markets advanced therapies in immunology, oncology, neuroscience, and other specialty areas. AbbVie's portfolio includes treatments for autoimmune diseases, various cancers, neurological disorders, and aesthetics through the Allergan Aesthetics portfolio.
 
-**URL:** [https://www.abbvie.com/](https://www.abbvie.com/)
+**Areas:** Pharmaceuticals · Biopharmaceutical · Healthcare · Life Sciences · Drug Discovery · Fortune 500
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=abbvie-api-evangelist&utm_content=repo)
+## AbbVie on APIs.io
 
-## Tags:
+Everything profiled for AbbVie is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/abbvie/](https://apis.io/providers/abbvie/)** — or go straight to one of the APIs or properties below.
 
- - Pharmaceuticals, Biopharmaceuticals, Healthcare, Life Sciences, Drug Discovery
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2024-01-15
-- **Modified:** 2026-04-19
+#### Security (2)
 
-## APIs
+Authentication, trust centre, and vulnerability disclosure.
 
-No public APIs have been documented yet. AbbVie is a biopharmaceutical company focused on drug discovery and development rather than public API services.
+- [Abbvie Domain Security](https://apis.io/security/abbvie/abbvie-domain-security/)
+- [Abbvie Vulnerability Disclosure](https://apis.io/security/abbvie/abbvie-vulnerability-disclosure/)
 
-## Common Properties
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Abbvie Plans Pricing](https://apis.io/plans/abbvie/abbvie-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Abbvie Rate Limits](https://apis.io/rate-limits/abbvie/abbvie-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.abbvie.com/)
-- [PrivacyPolicy](https://www.abbvie.com/privacy.html)
-- [TermsOfService](https://www.abbvie.com/terms-of-use.html)
 - [Blog](https://news.abbvie.com/)
-- [Contact](https://www.abbvie.com/contact-us.html)
+- [Security](https://cvd.abbvie.com/)
+- [Terms of service](https://www.abbvie.com/terms-of-use.html)
+- [Privacy policy](https://www.abbvie.com/privacy.html)
+- [GitHub](https://github.com/AbbVie)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Immunology Portfolio | Treatments for rheumatoid arthritis, psoriasis, IBD, and other immune-mediated diseases including Humira and Skyrizi |
-| Oncology Pipeline | Hematologic malignancy treatments and solid tumor therapies including Imbruvica and Venclexta |
-| Neuroscience Therapeutics | Treatments for Parkinson's disease, migraine, and psychiatric conditions |
-| Aesthetics Division | Medical aesthetics products through the Allergan Aesthetics portfolio |
-| Drug Discovery Research | Research-based drug discovery leveraging genomics, proteomics, and AI/ML approaches |
+**Kin Score 10.4** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 21.1 |
 
-| Name | Description |
-|------|-------------|
-| Clinical Trial Data | Access clinical trial results and outcomes data for research and regulatory submissions |
-| Patient Support Programs | Connect patient access programs and medication assistance with healthcare systems |
-| Healthcare Provider Portals | Provide healthcare professionals with product information and medical affairs resources |
-| Real World Evidence | Collect and analyze real-world patient data for post-market surveillance |
+**Agent readiness 5.4** — agent-aware
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Electronic Health Records | Integration with EHR systems for clinical data exchange and prescribing information |
-| Clinical Trial Management | Integration with CTMS platforms for clinical trial data collection and management |
-| Patient Assistance Programs | Integration with pharmacy and insurance systems for patient access programs |
+**Regulatory alignment 15.6** — Health
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/abbvie/](https://apis.io/providers/abbvie/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AbbVie: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/abbvie/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
